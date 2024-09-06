@@ -1,26 +1,32 @@
-#include <stdio.h>
-#include <math.h>
+// Phacharawat Eakgawatphokhin
+// 67070503426
 
-int main(void){
-    int n;
+#include <stdio.h>
+
+int main(void) {
+    int n, m;
     scanf("%d", &n);
 
-    if(n < 1) {
+    if (n < 1) {
         printf("Invalid input");
         return 0;
     }
 
-    for(int i = 1; i <= n; i++){
-        int j_max = (i == 1) ? 1 : i + i-1;
-
-        for(int j = 1; j <= j_max; j++){
-            for(int k = 1; k <= j; k++){
-                printf("%d ", k);
-            }
-            for(int k = j_max; k > 0; k--){
-                printf("%d ", k);
-            }
+    for (int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n-i; j++) {
+            printf("  ");
         }
+        m = 1;
+        for (int j = 1; j <= i; j++) {
+            printf("%d ", m++);
+        }
+        m -= 2;
+        for (int j = 1; j<i; j++) {
+            printf("%d ", m--);
+        }
+
         printf("\n");
     }
+
+    return 0;
 }
