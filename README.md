@@ -8,7 +8,15 @@ This repository aims to provide:
 - **Lab Files**: All lab exercises and their solutions.
 - **Homework Files**: All Assignment solutions.
 - **Exam Preparation Resources**: Practice questions of all module in **CPE100** course.
-  
+
+## Structure
+
+The repository is organized as follows:
+- **HomeWork**: Contains of all homework assignment, sorted by number of week.
+- **Lab**: Includes all lab exercieses, sorted by lab number.
+- **M2 Test**: Provide a **Module 2** quiz.
+- **Test Prep**: Contains of practice question.
+
 ## Contributions
 
 If you would like to contribute:
